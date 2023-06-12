@@ -17,7 +17,9 @@ driver.get("https://www.reddit.com")
 driver.maximize_window()
 login_link = driver.find_element(By.LINK_TEXT, "Log In")
 login_link.click()
+driver.switch_to.new_window()
 time.sleep(3)
+
 
 driver.close()
 
